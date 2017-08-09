@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account" />
+
+    <head>
+        <title>Help Deskt Tickets</title>
+        <css src="Jeff_Helpdesk::css/help.css" />
+    </head>
+    <body>
+        <referenceBlock name="page.main.title" remove="true" />
+        <referenceContainer name="content">
+            <block template="Jeff_Helpdesk::ticket/index.phtml" class="Jeff\Helpdesk\Block\Ticket\Index" name="jeff.helpdesk.ticket.index" cacheable="false" />
+        </referenceContainer>
+    </body>
+
+</page>
+<!--
+Notice how we immediately call the update directive, passing it the customer_account handle attribute value.
+This is like saying, "Include everything from the customer_account handle into our handle here."
+-->

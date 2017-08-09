@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Helpdesk Tickets</title>
+    </head>
+    <body>
+        <referenceBlock name="customer_account_navigation">
+            <block class="Magento\Framework\View\Element\Html\Link\Current" name="jeff-helpdesk-ticket">
+                <arguments>
+                    <argument name="path" xsi:type="string">jeff_helpdesk/ticket</argument>
+                    <argument name="label" xsi:type="string">Helpdesk Tickets</argument>
+                </arguments>
+            </block>
+            <move element="jeff-helpdesk-ticket" destination="customer_account_navigation" after="customer-account-navigation-orders-link" />
+            <referenceBlock name="customer-account-navigation-billing-agreements-link" remove="true"/>
+            <referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true"/>
+            <referenceBlock name="customer-account-navigation-wish-list-link" remove="true"/>
+        </referenceBlock>
+    </body>
+</page>
+<!--
+Simply including the customer_account handle is not enough; we need something extra to define our link under the My Account section.
+We define this extra something under the "app/code/Jeff/Helpdesk/view/frontend/layout/customer_account.xml"
+What is happening here is that we are referencing an existing block called customer_account_navigation and defining a new block within it of class 
+Magento\Framework\View\Element\Html\Link\Current. 
+This block accepts two parameters: the path taht is set to our controller action and the label that is set to Helpdesk Tickets.
+-->

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="jeffhelpdesk" translate="label" sortOrder="200">
+            <label>Jeff Help Desk</label>
+        </tab>
+        <section id="jeff_helpdesk" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Help desk</label>
+            <tab>jeffhelpdesk</tab>
+            <resource>Jeff_Helpdesk::helpdesk</resource>
+            <group id="email_template" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label> Email Template Options</label>
+                <field id="customer" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Store Owner to Customer Email Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+                <field id="store_owner" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Customer to Store Owner Email Template</label>
+                    <source_model>Magento\Config\Model\Config\Source\Email\Template</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+
+<!--
+Understanding what we can do with system.xml comes down to understanding what is defined under 
+vendor/magento/module-config/etc/system_file.xsd
+and studying existing Magento core module system.xml files to get some examples.
+-->

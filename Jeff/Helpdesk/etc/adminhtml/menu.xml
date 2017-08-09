@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Jeff_Helpdesk::ticket_manage" title="Helpdesk Tickets" module="Jeff_Helpdesk" parent="Magento_Customer::customer" action="jeff_helpdesk/ticket/index" resource="Jeff_Helpdesk::ticket_manage" />
+    </menu>
+</config>
+<!-- 
+    The position of an item within the admin area is defined by the attribute parent, which in our case means under the 
+    existing Customer Menu. 
+    If the parent is ommitted, our item would appear as a new item on a menu.
+    The title attribute value is the lable we will see in the menu.
+    The id attribute has to uniquely differentiate our menu item from others.
+    The resource attribute references the ACL resource defined in /etc/acl.xml file
+
+-->
