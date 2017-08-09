@@ -1,0 +1,21 @@
+Module Requirements
+1) Name used, Jeff/Helpdesk
+
+2) Data to be stored in table is called jeff_helpdesk_ticket
+
+3) Tickets entity will contain ticket_id, customer_id, title, severity, created_at and status attributes
+
+4) Two email templates: store_owner_to_customer_email_template and customer_to_store_owner_email_template are to be defined for pushing email updates ticket creation and status change
+
+5) Customers will be able to submit a ticket through their [MY ACCOUNT] section.
+
+6) Customers will be able to see all of their previously submitted tickets under their [My Account] section
+
+7) Customer will not be able to edit any existing tickets
+
+8) Once a customer submits a new ticket, transactional email will be sent to the store owner.
+
+9) Admin users will be able to access a list of all tickets under [Customers | Helpdesk Tickets].
+
+10) Once Admin users change the ticket status, an email will be sent to the customer.
+
