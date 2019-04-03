@@ -2,8 +2,7 @@
   "name": "quazz/helpdesk",
   "description": "Magento 2 Repair module",
   "require": {
-    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0",
-    "jeff/core-m2": "dev-master"
+    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0"
   },
   "type": "magento2-module",
   "license": [
