@@ -1,17 +1,17 @@
 <?php
-namespace Jeff\Helpdesk\Controller\Adminhtml\Ticket;
+namespace Axitech\Repair\Controller\Adminhtml\Ticket;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
 use Magento\Backend\Model\View\Result\ForwardFactory;
-use Jeff\Helpdesk\Model\TicketFactory;
+use Axitech\Repair\Model\TicketFactory;
 use Magento\Customer\Api\CustomerRepositoryInterface;
 use Magento\Framework\Mail\Template\TransportBuilder;
 use Magento\Framework\Translate\Inline\StateInterface;
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\StoreManagerInterface;
 
-class Close extends \Jeff\Helpdesk\Controller\Adminhtml\Ticket {
+class Close extends \Axitech\Repair\Controller\Adminhtml\Ticket {
     
     protected $ticketFactory;
     protected $customerRepository;
@@ -46,7 +46,7 @@ class Close extends \Jeff\Helpdesk\Controller\Adminhtml\Ticket {
 
         if($ticket && $ticket->getId()) {
             try{
-                $ticket->setStatus(\Jeff\Helpdesk\Model\Ticket::STATUS_CLOSED);
+                $ticket->setStatus(\Axitech\Repair\Model\Ticket::STATUS_CLOSED);
                 $ticket->save();
                 $this->messageManager->addSuccess(__('Ticket successfully closed.'));
 
