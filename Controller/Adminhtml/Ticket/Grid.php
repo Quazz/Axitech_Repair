@@ -1,7 +1,7 @@
 <?php
-namespace Jeff\Helpdesk\Controller\Adminhtml\Ticket;
+namespace Axitech\Repair\Controller\Adminhtml\Ticket;
 
-class Grid extends \Jeff\Helpdesk\Controller\Adminhtml\Ticket {
+class Grid extends \Axitech\Repair\Controller\Adminhtml\Ticket {
     public function execute() {
         $this->_view->loadLayout(false);
         $this->_view->renderLayout();
