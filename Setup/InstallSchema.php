@@ -54,11 +54,11 @@ class InstallSchema implements InstallSchemaInterface {
                 'Severity'
             )
             ->addIndex(
-                $installer->getIdxName('jeff_helpdesk_ticket', ['customer_id']),
+                $installer->getIdxName('axitech_repair_ticket', ['customer_id']),
                 ['customer_id']
             )
             ->addForeignKey(
-                $installer->getFkName('jeff_helpdesk_ticket', 'customer_id', 'customer_entity', 'entity_id'),
+                $installer->getFkName('axitech_repair_ticket', 'customer_id', 'customer_entity', 'entity_id'),
                 'customer_id',
                 $installer->getTable('customer_entity'),
                 'entity_id',
