@@ -11,11 +11,11 @@
                     <argument name="label" xsi:type="string">Helpdesk Tickets</argument>
                 </arguments>
             </block>
-            <move element="jeff-helpdesk-ticket" destination="customer_account_navigation" after="customer-account-navigation-orders-link" />
             <referenceBlock name="customer-account-navigation-billing-agreements-link" remove="true"/>
             <referenceBlock name="customer-account-navigation-downloadable-products-link" remove="true"/>
             <referenceBlock name="customer-account-navigation-wish-list-link" remove="true"/>
         </referenceBlock>
+        <move element="jeff-helpdesk-ticket" destination="customer_account_navigation" after="customer-account-navigation-orders-link" />
     </body>
 </page>
 <!--
