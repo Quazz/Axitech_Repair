@@ -1,5 +1,5 @@
 <?php
-namespace Jeff\Helpdesk\Controller\Ticket;
+namespace Axitech\Repair\Controller\Ticket;
 
 use Magento\Framework\App\Action\Context;
 use Magento\Customer\Model\Session as CustomerSession;
@@ -9,9 +9,9 @@ use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Store\Model\StoreManagerInterface;
 use Magento\Framework\Data\Form\FormKey\Validator;
 use Magento\Framework\Stdlib\DateTime;
-use Jeff\Helpdesk\Model\TicketFactory;
+use Axitech\Repair\Model\TicketFactory;
 
-class Save extends \Jeff\Helpdesk\Controller\Ticket {
+class Save extends \Axitech\Repair\Controller\Ticket {
     protected $transportBuilder;
     protected $inlineTranslation;
     protected $scopeConfig;
@@ -53,13 +53,11 @@ class Save extends \Jeff\Helpdesk\Controller\Ticket {
             return $resultRedirect->setRefererUrl();
         }
         $title = $this->getRequest()->getParam('title');
-        $severity = $this->getRequest()->getParam('severity');
 
         try{
             $ticket = $this->ticketFactory->create();
             $ticket->setCustomerId($this->customerSession->getCustomerId());
             $ticket->setTitle($title);
-            $ticket->setSeverity($severity);
             $ticket->setCreatedAt($this->dateTime->formatDate(true));
             $ticket->setStatus(\Jeff\Helpdesk\Model\Ticket::STATUS_OPENED);
             $ticket->save();
@@ -89,7 +87,7 @@ class Save extends \Jeff\Helpdesk\Controller\Ticket {
             $this->messageManager->addSuccess(__('Ticket successfully created.'));
         }
         catch(Exception $e) {
-            $this->messageManager->addError(__('Error occurred during tickete creation.'));
+            $this->messageManager->addError(__('Error occurred during ticket creation.'));
         }
 
         return $resultRedirect->setRefererUrl();
