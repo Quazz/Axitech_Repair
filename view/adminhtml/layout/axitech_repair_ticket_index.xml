@@ -4,7 +4,7 @@
     <update handle="axitech_repair_ticket_grid_block" />
     <body>
         <referenceContainer name="content">
-            <block class="Axitech\Repair\Block\Adminhtml\Ticket" name="admin.block.helpdesk.ticket.grid.container">
+            <block class="Axitech\Repair\Block\Adminhtml\Ticket" name="admin.block.repair.ticket.grid.container">
             </block>
         </referenceContainer>
     </body>
