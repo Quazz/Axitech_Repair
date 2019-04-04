@@ -5,7 +5,7 @@
             <block class="Magento\Backend\Block\Widget\Grid" name="admin.block.helpdesk.ticket.grid" as="grid">
                 <arguments>
                     <argument name="id" xsi:type="string">ticketGrid</argument>
-                    <argument name="dataSource" xsi:type="object">Jeff\Helpdesk\Model\ResourceModel\Ticket\Collection</argument>
+                    <argument name="dataSource" xsi:type="object">Axitech\Repair\Model\ResourceModel\Ticket\Collection</argument>
                     <argument name="default_sort" xsi:type="string">ticket_id</argument>
                     <argument name="default_dir" xsi:type="string">desc</argument>
                     <argument name="save_parameters_in_session" xsi:type="boolean">true</argument>
@@ -35,8 +35,8 @@
                             <argument name="header" xsi:type="string" translate="true">Status</argument>
                             <argument name="index" xsi:type="string">Status</argument>
                             <argument name="type" xsi:type="string">options</argument>
-                            <argument name="options" xsi:type="options" model="Jeff\Helpdesk\Model\Ticket\Grid\Status"/>
-                            <argument name="renderer" xsi:type="string">Jeff\Helpdesk\Block\Adminhtml\Ticket\Grid\Renderer\Status</argument>
+                            <argument name="options" xsi:type="options" model="Axitech\Repair\Model\Ticket\Grid\Status"/>
+                            <argument name="renderer" xsi:type="string">Axitech\Repair\Block\Adminhtml\Ticket\Grid\Renderer\Status</argument>
                             <!-- <argument name="id" xsi:type="string">severity</argument> -->
                             <argument name="header_css_class" xsi:type="string">col-form_id</argument>
                             <argument name="column_css_class" xsi:type="string">col-form_id</argument>
