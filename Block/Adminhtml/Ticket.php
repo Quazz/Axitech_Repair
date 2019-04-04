@@ -1,16 +1,15 @@
 <?php
-namespace Jeff\Helpdesk\Block\Adminhtml;
+namespace Axitech\Repair\Block\Adminhtml;
 
 use Magento\Backend\Block\Widget\Grid\Container;
 
 class Ticket extends Container {
     protected function _construct() {
         $this->_controller = 'adminhtml';
-        $this->_blockGroup = 'Jeff_Helpdesk';
+        $this->_blockGroup = 'Axitech_Repair';
         $this->_headerText = __('Tickets');
 
         parent::_construct();
-        $this->removeButton('add');
     }
 }
 /*
