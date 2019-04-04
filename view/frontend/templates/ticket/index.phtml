@@ -1,5 +1,5 @@
 <?php $tickets = $block->getTickets(); ?>
-<h1>__('Repairs')</h1>
+<h1><?php __('Repairs') ?></h1>
 <?php if($tickets->count()): ?>
 <table class="data-grid">
     <?php foreach($tickets as $ticket): ?>
