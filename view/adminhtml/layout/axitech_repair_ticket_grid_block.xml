@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="admin.block.helpdesk.ticket.grid.container">
-            <block class="Magento\Backend\Block\Widget\Grid" name="admin.block.helpdesk.ticket.grid" as="grid">
+        <referenceBlock name="admin.block.repair.ticket.grid.container">
+            <block class="Magento\Backend\Block\Widget\Grid" name="admin.block.repair.ticket.grid" as="grid">
                 <arguments>
                     <argument name="id" xsi:type="string">ticketGrid</argument>
                     <argument name="dataSource" xsi:type="object">Axitech\Repair\Model\ResourceModel\Ticket\Collection</argument>
@@ -11,7 +11,7 @@
                     <argument name="save_parameters_in_session" xsi:type="boolean">true</argument>
                     <argument name="use_ajax" xsi:type="boolean">true</argument>
                 </arguments>
-                <block class="Magento\Backend\Block\Widget\Grid\ColumnSet" name="admin.block.helpdesk.ticket.grid.columnSet" as="grid.columnSet">
+                <block class="Magento\Backend\Block\Widget\Grid\ColumnSet" name="admin.block.repair.ticket.grid.columnSet" as="grid.columnSet">
                     <block class="Magento\Backend\Block\Widget\Grid\Column" as="ticket_id">
                         <arguments>
                             <argument name="header" xsi:type="string" translate="true">ID</argument>
