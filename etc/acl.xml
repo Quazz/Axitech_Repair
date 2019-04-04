@@ -4,12 +4,12 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Magento_Customer::customer">
-                    <resource id="Jeff_Helpdesk::ticket_manager" title="Manage Helpdesk Tickets"/>
+                    <resource id="Axitech_Repair::ticket_manager" title="Manage Repair Tickets"/>
                 </resource>
                 <resource id="Magento_Backend::stores">
                     <resource id="Magento_Backend::stores_settings">
                         <resource id="Magento_Config::config">
-                            <resource id="Jeff_Helpdesk::helpdesk" title="Helpdeskt Section" />
+                            <resource id="Axitech_Repair::helpdesk" title="Repair Section" />
                         </resource>
                     </resource>
                 </resource>
