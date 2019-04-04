@@ -59,14 +59,14 @@ class Save extends \Axitech\Repair\Controller\Ticket {
             $ticket->setCustomerId($this->customerSession->getCustomerId());
             $ticket->setTitle($title);
             $ticket->setCreatedAt($this->dateTime->formatDate(true));
-            $ticket->setStatus(\Jeff\Helpdesk\Model\Ticket::STATUS_OPENED);
+            $ticket->setStatus(\Axitech\Repair\Model\Ticket::STATUS_OPENED);
             $ticket->save();
 
             $customer = $this->customerSession->getCustomerData();
             /*
             //Send email to store owner
             $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
-            $transport = $this->transportBuilder->setTemplateIdentifier($this->scopeConfig->getValue('jeff_helpdesk/email_template/store_owner', $storeScope))
+            $transport = $this->transportBuilder->setTemplateIdentifier($this->scopeConfig->getValue('axitech_repair/email_template/store_owner', $storeScope))
                 ->setTemplateOptions(
                     [
                         'area' => \Magento\Framework\App\Area::AREA_FRONTEND,
