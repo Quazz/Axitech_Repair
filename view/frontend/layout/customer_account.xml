@@ -23,5 +23,5 @@ Simply including the customer_account handle is not enough; we need something ex
 We define this extra something under the "app/code/Axitech/Repair/view/frontend/layout/customer_account.xml"
 What is happening here is that we are referencing an existing block called customer_account_navigation and defining a new block within it of class 
 Magento\Framework\View\Element\Html\Link\Current. 
-This block accepts two parameters: the path taht is set to our controller action and the label that is set to Helpdesk Tickets.
+This block accepts two parameters: the path that is set to our controller action and the label that is set to Repair Tickets.
 -->
