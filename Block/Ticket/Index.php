@@ -1,11 +1,11 @@
 <?php
-namespace Jeff\Helpdesk\Block\Ticket;
+namespace Axitech\Repair\Block\Ticket;
 
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Element\Template\Context;
 use Magento\Framework\Stdlib\DateTime;
 use Magento\Customer\Model\Session as CustomerSession;
-use Jeff\Helpdesk\Model\TicketFactory;
+use Axitech\Repair\Model\TicketFactory;
 
 class Index extends Template {
     /**
@@ -19,7 +19,7 @@ class Index extends Template {
     protected $customerSession;
 
     /**
-     * @var \Jeff\Helpdesk\Model\TicketFactory
+     * @var \Axitech\Repair\Model\TicketFactory
      */
     protected $ticketFactory;
 
@@ -35,7 +35,7 @@ class Index extends Template {
     }
 
     /**
-     * @return \Jeff\Helpdesk\Model\ResourceModel\Ticket\Collection
+     * @return \Axitech\Repair\Model\ResourceModel\Ticket\Collection
      */
     public function getTickets() {
         return $this->ticketFactory->create()
