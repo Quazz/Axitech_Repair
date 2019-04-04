@@ -4,12 +4,12 @@
 
     <head>
         <title>Help Deskt Tickets</title>
-        <css src="Jeff_Helpdesk::css/help.css" />
+        <css src="Axitech_Repair::css/help.css" />
     </head>
     <body>
         <referenceBlock name="page.main.title" remove="true" />
         <referenceContainer name="content">
-            <block template="Jeff_Helpdesk::ticket/index.phtml" class="Jeff\Helpdesk\Block\Ticket\Index" name="jeff.helpdesk.ticket.index" cacheable="false" />
+            <block template="Axitech_Repair::ticket/index.phtml" class="Axitech\Repair\Block\Ticket\Index" name="axitech.repair.ticket.index" cacheable="false" />
         </referenceContainer>
     </body>
 
