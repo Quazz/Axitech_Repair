@@ -11,6 +11,6 @@ Module Requirements
 
 6) Customer will not be able to edit any existing tickets
 
-7) Admin users will be able to access a list of all tickets under [Customers | Helpdesk Tickets].
+7) Admin users will be able to access a list of all tickets under [Customers | Repair Tickets].
 
 8) Once Admin users change the ticket status, an email will be sent to the customer.
