@@ -1,9 +1,9 @@
 <?php
-namespace Jeff\Helpdesk\Block\Adminhtml\Ticket\Grid\Renderer;
+namespace Axitech\Repair\Block\Adminhtml\Ticket\Grid\Renderer;
 
 use Magento\Backend\Block\Widget\Grid\Column\Renderer\AbstractRenderer;
 use Magento\Backend\Block\Context;
-use Jeff\Helpdesk\Model\TicketFactory;
+use Axitech\Repair\Model\TicketFactory;
 
 class Status extends AbstractRenderer {
     protected $ticketFactory;
