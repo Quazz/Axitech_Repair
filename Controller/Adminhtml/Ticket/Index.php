@@ -1,6 +1,6 @@
 <?php
-namespace Jeff\Helpdesk\Controller\Adminhtml\Ticket;
-class Index extends \Jeff\Helpdesk\Controller\Adminhtml\Ticket
+namespace Axitech\Repair\Controller\Adminhtml\Ticket;
+class Index extends \Axitech\Repair\Controller\Adminhtml\Ticket
 {
     public function execute()
     {
@@ -12,7 +12,7 @@ class Index extends \Jeff\Helpdesk\Controller\Adminhtml\Ticket
         }
         $resultPage = $this->resultPageFactory->create();
 
-        $resultPage->setActiveMenu('Jeff_Helpdesk::ticket_manage');
+        $resultPage->setActiveMenu('Axitech_Repair::ticket_manage');
         $resultPage->getConfig()->getTitle()->prepend(__('Tickets'));
 
         $resultPage->addBreadcrumb(__('Tickets'), __('Tickets'));
