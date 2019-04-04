@@ -1,5 +1,5 @@
 <?php
-namespace Jeff\Helpdesk\Controller\Adminhtml;
+namespace Axitech\Repair\Controller\Adminhtml;
 
 use Magento\Backend\App\Action\Context;
 use Magento\Backend\App\Action as BackendAction;
@@ -19,12 +19,12 @@ abstract class Ticket extends BackendAction {
     }
 
     protected function _isAllowed() {
-        return $this->_authorization->isAllowed('Jeff_Helpdesk::ticket_manage');
+        return $this->_authorization->isAllowed('Axitech_Repair::ticket_manage');
     }
 
     protected function _initAction() {
         $this->_view->loadLayout();
-        $this->_setActiveMenu('Jeff_Helpdesk::ticket_manage')->_addBreadcrumb(__('Helpdesk'), __('Tickets'));
+        $this->_setActiveMenu('Axitech_Repair::ticket_manage')->_addBreadcrumb(__('Repairs'), __('Tickets'));
 
         return $this;
     }
