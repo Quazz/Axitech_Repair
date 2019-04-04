@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_template.xsd">
-    <template id="jeff_helpdesk_email_template_customer" label="Jeff Helpdesk - Customer Email" file="store_owner_to_customer.html" type="html" module="Jeff_Helpdesk" area="frontend" /> 
-    <template id="jeff_helpdesk_email_template_store_owner" label="Jeff Helpdesk - Store Owner Email" file="customer_to_store_owner.html" type="html" module="Jeff_Helpdesk" area="frontend" /> 
+    <template id="axitech_repair_email_template_customer" label="Axitech Repair - Customer Email" file="store_owner_to_customer.html" type="html" module="Axitech_Repair" area="frontend" /> 
+    <template id="axitech_repair_email_template_store_owner" label="Axitech Repair - Store Owner Email" file="customer_to_store_owner.html" type="html" module="Axitech_Repair" area="frontend" /> 
 </config>
 <!--
 Looing into email_templates.xsd, we can conclude that the values for id, label, file, type, and module are all required.
