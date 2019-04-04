@@ -40,13 +40,6 @@ class InstallSchema implements InstallSchemaInterface {
                 'Title'
             )
             ->addColumn(
-                'severity',
-                \Magento\Framework\DB\Ddl\Table::TYPE_SMALLINT,
-                null,
-                ['nullable' => false],
-                'Severity'
-            )
-            ->addColumn(
                 'created_at',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
                 null,
