@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeff\Helpdesk\Setup;
+namespace Axitech\Repair\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
@@ -17,7 +17,7 @@ class InstallSchema implements InstallSchemaInterface {
         $installer->startSetup();
 
         $table = $installer->getConnection()
-            ->newTable($installer->getTable('jeff_helpdesk_ticket'))
+            ->newTable($installer->getTable('axitech_repair_ticket'))
             ->addColumn(
                 'ticket_id',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
