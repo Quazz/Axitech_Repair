@@ -43,8 +43,4 @@ class Index extends Template {
             ->addFieldToFilter('customer_id', $this->customerSession->getcustomerId())
             ->setOrder('ticket_id', 'DESC');
     }
-
-    public function getSeverities() {
-        return \Jeff\Helpdesk\Model\Ticket::getSeveritiesOptionArray();
-    }
 }
