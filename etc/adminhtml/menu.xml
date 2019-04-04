@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
-        <add id="Jeff_Helpdesk::ticket_manage" title="Helpdesk Tickets" module="Jeff_Helpdesk" parent="Magento_Customer::customer" action="jeff_helpdesk/ticket/index" resource="Jeff_Helpdesk::ticket_manage" />
+        <add id="Axitech_Repair::ticket_manage" title="Axitech Repair Tickets" module="Axitech_Repair" parent="Magento_Customer::customer" action="axitech_repair/ticket/index" resource="Axitech_Repair::ticket_manage" />
     </menu>
 </config>
 <!-- 
