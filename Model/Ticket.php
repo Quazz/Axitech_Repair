@@ -1,5 +1,5 @@
 <?php
-namespace Jeff\Helpdesk\Model;
+namespace Axitech\Repair\Model;
 
 class Ticket extends \Magento\Framework\Model\AbstractModel {
     const STATUS_OPENED = 1;
@@ -17,7 +17,7 @@ class Ticket extends \Magento\Framework\Model\AbstractModel {
      */
     protected function _construct()
     {
-        $this->_init('Jeff\Helpdesk\Model\ResourceModel\Ticket');
+        $this->_init('Axitech\Repair\Model\ResourceModel\Ticket');
     }
 
     public static function getStatusesOptionArray() {
