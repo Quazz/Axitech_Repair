@@ -1,10 +1,10 @@
 <?php
-namespace Jeff\Helpdesk\Model\Ticket\Grid;
+namespace Axitech\Repair\Model\Ticket\Grid;
 
 use Magento\Framework\Option\ArrayInterface;
 
 class Status implements ArrayInterface {
     public function toOptionArray() {
-        return \Jeff\Helpdesk\Model\Ticket::getStatusesOptionArray();
+        return \Axitech\Repair\Model\Ticket::getStatusesOptionArray();
     }
 }
