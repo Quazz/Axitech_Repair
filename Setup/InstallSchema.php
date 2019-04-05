@@ -51,7 +51,7 @@ class InstallSchema implements InstallSchemaInterface {
                 \Magento\Framework\DB\Ddl\Table::TYPE_SMALLINT,
                 null,
                 ['nullable' => false],
-                'Severity'
+                'Status'
             )
             ->addIndex(
                 $installer->getIdxName('axitech_repair_ticket', ['customer_id']),
