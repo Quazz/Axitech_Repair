@@ -14,3 +14,13 @@ Module Requirements
 7) Admin users will be able to access a list of all tickets under [Customers | Repair Tickets].
 
 8) Once Admin users change the ticket status, an email will be sent to the customer.
+
+9) Customers can make appointments for repair
+
+10) Customers get emailed with appointment details
+
+11) Generate invoice of repair
+
+12) Email invoice to customer
+
+13) Generate editable (in admin) quote where products can be added.
